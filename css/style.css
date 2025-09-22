@@ -1,4 +1,3 @@
-
 :root{
   --pink:#FFB6C1;
   --blue:#ADD8E6;
@@ -52,95 +51,13 @@ nav a:hover{background:rgba(0,0,0,.05)}
 .btn-secondary:hover{background:rgba(173,216,230,.15)}
 
 
-/* Hero Section */
-.hero {
-  position: relative;
-  min-height: clamp(520px, 72vh, 760px); /* consistent height across screens */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  overflow: hidden;
-  padding: 0 20px;
-}
-
-.hero-media {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-}
-
-.hero-media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;         /* no stretching */
-  object-position: 50% 35%;  /* favor a little more sky by default */
-  display: block;
-}
-
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(34, 34, 34, 0.45); /* improve contrast for text */
-  z-index: -1;
-}
-
-.hero h1 {
-  font-family: Montserrat, Inter, sans-serif;
-  font-weight: 800;
-  line-height: 1.1;
-  font-size: clamp(32px, 6vw, 56px);
-  margin-bottom: 16px;
-}
-
-.hero p {
-  font-size: clamp(16px, 2.5vw, 20px);
-  margin: 0 auto 24px auto;
-  max-width: 720px;
-}
-
-.hero .cta {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-
-/* Tablets / small laptops */
-@media (max-width: 1024px) {
-  .hero { min-height: clamp(460px, 68vh, 700px); }
-  .hero-media img { object-position: 50% 40%; }
-}
-
-/* Large desktops (very wide browser windows) */
-@media (min-width: 1280px) {
-  .hero { min-height: 66vh; }
-  .hero-media img { object-position: 50% 30%; } /* keep houses in frame */
-}
-
-
-/* Ultra-wide screens (1600px+) */
-@media (min-width: 1600px) {
-  .hero { min-height: 64vh; }
-  .hero-media img { object-position: 50% 26%; } /* shift up */
-}
-
-/* Extra-wide (1900px+, 21:9 monitors) */
-@media (min-width: 1900px) {
-  .hero-media img { object-position: 50% 24%; }
-
-
-/* Phones */
-@media (max-width: 640px) {
-  .hero { min-height: 62vh; }
-  .hero h1 { font-size: clamp(28px, 7.5vw, 40px); }
-  .hero p  { font-size: clamp(14px, 3.5vw, 18px); }
-  .hero .cta { gap: 10px; }
-}
-
-
+.hero{position:relative;padding:120px 0}
+.hero-media{position:absolute;inset:0;z-index:-1}
+.hero-media img{width:100%;height:100%;object-fit:inherit}
+.hero-overlay{position:absolute;inset:0;background:rgba(34,34,34,.45);z-index:-1}
+.hero h1{font-family:Montserrat,Inter,sans-serif;font-weight:800;line-height:1.1;font-size:clamp(32px,6vw,56px);color:var(--white);margin:0 0 16px}
+.hero p{color:rgba(255,255,255,.95);max-width:760px;font-size:clamp(16px,2.5vw,20px);margin:0}
+.hero .cta{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
 
 
 h2{font-family:Montserrat,Inter,sans-serif;font-size:clamp(26px,3.5vw,36px);line-height:1.2;margin:0 0 20px}
@@ -180,14 +97,8 @@ summary{cursor:pointer;font-weight:800}
 
 form{background:var(--white);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
 label{font-weight:700;font-size:14px}
-input, select, textarea {
-  width: 100%;
-  padding: 12px 14px;
-  border-radius: 10px;
-  border: 1px solid #e2e8f0;
-  background: #fff;
-  font: inherit;
-}
+input,select,
+
 
 
 
