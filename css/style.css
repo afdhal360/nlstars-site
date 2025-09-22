@@ -120,6 +120,18 @@ nav a:hover{background:rgba(0,0,0,.05)}
   .hero-media img { object-position: 50% 30%; } /* keep houses in frame */
 }
 
+
+/* Ultra-wide screens (1600px+) */
+@media (min-width: 1600px) {
+  .hero { min-height: 64vh; }
+  .hero-media img { object-position: 50% 26%; } /* shift up */
+}
+
+/* Extra-wide (1900px+, 21:9 monitors) */
+@media (min-width: 1900px) {
+  .hero-media img { object-position: 50% 24%; }
+
+
 /* Phones */
 @media (max-width: 640px) {
   .hero { min-height: 62vh; }
@@ -176,6 +188,7 @@ input, select, textarea {
   background: #fff;
   font: inherit;
 }
+
 
 
 
